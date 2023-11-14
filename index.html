@@ -26,15 +26,14 @@
             <td><label for="nameExtension">NAME EXTENSION (JR., SR): </label></td>
             <td><input type="text" id="nameExtension" name="nameExtension" placeholder="Name Extension"></td>
         </tr>
-      </table>
-      <table>
+
         <tr>
           <td><label for="dateOfBirth">DATE OF BIRTH (mm/dd/yyyy): </label></td>
           <td><input type="date" id="dateOfBirth" name="dateOfBirth"></td>
+
           <td><label for="placeOfBirth">PLACE OF BIRTH: </label></td>
-          <td><input type="text"></td>
-        </tr>
-        <tr>
+          <td><input type="text" id="birthPlace" name="placeOfBirth"></td>
+
           <td><label for="sex">SEX: </label></td>
           <td><select id="sex" name="sex">
             <option value="male">Male</option>
@@ -51,9 +50,9 @@
             </select>
           </td>
         </tr>
-      </table>
+
       <!--Body HWB-->
-      <table>
+
         <tr>
           <td><label for="height">HEIGHT: </label></td>
           <td><input type="text"></td>
@@ -62,17 +61,19 @@
           <td><label for="bloodType">BLOOD TYPE: </label></td>
           <td><input type="text" name="bloodType"></td>
         </tr>
-      </table>
+
       <!--Gov Id-->
-      <table>
+
         
-          <tr>
+        <tr>
           <td><label for="gsis id">GSIS ID NO.:</label></td>
           <td><input type="text"></td>
           <td><label for="pag-ibig">PAG-IBIG ID NO.:</label></td>
           <td><input type="text"></td>
           <td><label for="philhealth id">PHILHEALTH ID NO.:</label></td>
-          <td><input type="text"></td></tr>
+          <td><input type="text"></td>
+        </tr>
+
           <tr>
           <td><label for="sss">SSS ID No.:</label></td>
           <td><input type="text"></td>
@@ -81,6 +82,7 @@
           <td><label for="employee num">AGENCY EMPLOYEE NO.: </label></td>
           <td><input type="text"></td>
           </tr>
+
           <tr>
             <td>
                 <label for="citizenship">CITIZENSHIP: </label>
@@ -99,6 +101,15 @@
 
                 <label for="option4">By naturalization: </label>
                 <input type="checkbox" id="option4" name="citizenshipOption" value="4">
+            </td>
+            <td>
+              <label for="address">Address: </label>
+              <div class="address-group">
+                <label for="houseBlockLot">House/Block/Lot:</label>
+                <input type="text" id="houseBlockLot" name="houseBlockLot" placeholder="123">
+                <label for="street">Street:</label>
+                <input type="text" id="street" name="street" placeholder="Main St">
+            </div>
             </td>
         </tr>
       </table>
