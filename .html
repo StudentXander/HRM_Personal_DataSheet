@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal DataSheet</title>
+  <style>
+    label {
+      display: block;
+      margin-bottom: 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Personal DataSheet</h1>
+
+  <form action="/submit" method="post">
+    <!-- Section I: Personal Information -->
+    <h2>I. PERSONAL INFORMATION</h2>
+    <div>
+      <label for="surname">2. SURNAME</label>
+      <input type="text" id="surname" name="surname" placeholder="Surname">
+    </div>
+    <div>
+      <label for="firstName">FIRST NAME</label>
+      <input type="text" id="firstName" name="firstName" placeholder="First Name">
+    </div>
+    <div>
+      <label for="nameExtension">NAME EXTENSION (JR., SR)</label>
+      <input type="text" id="nameExtension" name="nameExtension" placeholder="Name Extension">
+    </div>
+    <div>
+      <label for="middleName">MIDDLE NAME</label>
+      <input type="text" id="middleName" name="middleName" placeholder="Middle Name">
+    </div>
+
+    <!-- Additional fields from the personal information section go here -->
+
+    <!-- Section II: Family Background -->
+    <h2>II. FAMILY BACKGROUND</h2>
+    <!-- Fields for spouse, children, father, mother go here -->
+
+    <!-- Section III: Educational Background -->
+    <h2>III. EDUCATIONAL BACKGROUND</h2>
+    <!-- Fields for educational background go here -->
+
+    <!-- Signature and Date -->
+    <div>
+      <label for="signature">SIGNATURE</label>
+      <input type="text" id="signature" name="signature" placeholder="Your Signature">
+    </div>
+    <div>
+      <label for="date">DATE</label>
+      <input type="date" id="date" name="date">
+    </div>
+
+    <!-- Submit button -->
+    <div>
+      <input type="submit" value="Submit">
+    </div>
+  </form>
+
+</body>
+</html>
+
+<!--
+        <table>
+      <tr><th>I. Personal Information</th></tr>
+      <tr>
+        <td>
+          <label for="Surname">SurName: </label>
+          <input type="text" class="form-control" placeholder="Surname" value="Ortega">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label for="FirstName">First Name: </label>
+          <input type="text" class="form-control" placeholder="FirstName" value="Ortega">
+        </td>
+      </tr>
+-->
+    <!--
+      <hr color="blue">
+      <br>
+      <form>
+        <b><u>PERSONAL DATA:</b></u> <br> <br>
+        First Name: <input type="text" name="firstname" size="40" maxlength="50"><br><br>
+        Middle Name: <input type="text" name="middlename" size="35" maxlength="50"><br><br>
+        Surname: <input type="text" name="surname" size="40" maxlength="50"><br><br>
+        Sex: <br>
+        <input type="radio" name="sex" value="male"> Male <br>
+        <input type="radio" name="sex" value="female"> Female <br>
+        <br>
+        Civil Status: <br>
+        <input type="radio" name="status" value="single"> Single <br>
+        <input type="radio" name="status" value="married"> Married <br>
+        <input type="radio" name="status" value="annulled"> Annulled <br>
+        <input type="radio" name="status" value="widowed"> Widowed <br>
+        <input type="radio" name="status" value="separated"> Separated <br>
+        <br>
+        Birth Date: <input type="text" name="birthdate" maxlength="50"><br>
+        <br>
+        Birth Place: <input type="text" name="birthplace" size="50" maxlength="50"><br>
+        <br>
+        Permanent Address: <input type="text" name="permanentaddress" size="150" maxlength="500"><br>
+        <br><br>
+        <b><u>FAMILY BACKGROUND:</b></u> <br> <br>
+        Father's Name: <input type="text" name="father" size="50" maxlength="50"><br>
+        <br>
+        Occupation: <input type="text" name="work" size="50" maxlength="50"><br>
+<br><br>
+<b><u>EDUCATIONAL BACKGROUND:</b></u> <br>
+Check your Educational Attainment
+<br>
+<input type="checkbox" name="elementary"> Elementary Graduate <br>
+<input type="checkbox" name="highschool"> High School Graduate <br>
+<input type="checkbox" name="college"> College Graduate <br>
+<input type="checkbox" name="masteral"> Masteral Graduate <br>
+<input type="checkbox" name="doctoral"> Doctoral Graduate <br>
+<br>
+College/University: <select name="college/universities">
+  <option> -Select-
+    <option> -Select-
+        <option> Palawan State University
+        <option> University of East
+        <option> Holy Trinity University
+        <option> Western Philippines University
+        <option> PPCI
+        <option> Saint Joseph Academy
+        <option> Babag 2 National High School 
+        <option> Gun-ob National High School 
+  </select>
+  Year Graduated: <select name="year">
+    <option> -Select-
+        <option> 2012
+        <option> 2013
+        <option> 2014
+        <option> 2015
+        <option> 2016
+        <option> 2017
+        <option> 2018
+        <option> 2019
+        <option> 2020
+        <option> 2021
+        <option> 2022
+        <option> 2023
+    </select>
+    <br>
+    <br>
+    High School: <select name="highschool">
+      <option> -Select-
+      <option> Palawan State University
+      <option> Sta.Monica National High School
+      <option> Holy Trinity University
+      <option> Palawan National School
+      <option> PPCI
+      <option> Saint Joseph Academy
+      <option> Babag 2 National High School 
+      <option> Gun-ob National High School 
+      </select>
+      Year Graduated: <select name="year">
+        <option> -Select-
+        <option> 2013
+        <option> 2014
+        <option> 2015
+        <option> 2016
+        <option> 2017
+        <option> 2018
+        <option> 2019
+        <option> 2020
+        <option> 2021
+        <option> 2022
+        <option> 2023
+        </select><br>
+        <br><br>
+        <b><u>CONTACT DETAILS:</b></u> <br> <br>
+        Email Address: <input type="text" name="emailadd" size="40" maxlength="50"> <br>
+        Password: <input type="password" name="password" size="25" maxlength="50"> <br>
+        <br>
+        Phone Numbers: <br>
+        Cellphone <input type="text" name="cell" size="30" maxlength="50">
+        Telephone <input type="text" name="tel" size="30" maxlength="50"> <br>
+        <br><br>
+        <input type="submit" value="Send">
+        <input type="reset" value="Clear">
+        </form> -->
