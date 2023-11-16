@@ -11,7 +11,18 @@
         <h4><span style="font-size: 20px;">Form No. 212</span><br>
             <span style="font-size: 14px;">Revised 2017</span></h4>
         <h1> PERSONAL DATA SHEET </h1>
+        <div class="warning-container">
+          <p class="warning-text">
+              WARNING: Any misrepresentation made in the Personal Data Sheet and the Work Experience Sheet shall cause the filing of administrative/criminal case/s against the person concerned.
+          </p>
+          <p class="instructions">READ THE ATTACHED GUIDE TO FILLING OUT THE PERSONAL DATA SHEET (PDS) BEFORE ACCOMPLISHING THE PDS FORM.</p>
+          <p>Print legibly. Tick appropriate boxes [] and use separate sheet if necessary. Indicate N/A if not applicable.  DO NOT ABBREVIATE.</p>
+      </div>
       <table>
+        <tr style="text-align: right; vertical-align: top;">
+          <td colspan="2" style="background-color: gray;"><label for="csIdNo">1. CS ID No. </label></td>
+          <td colspan="6" style="background-color: lightyellow;"><input type="text" id="csIdNo" name="csIdNo" placeholder="(Do not fill up. For CSC use only.)"></td>
+      </tr>
         <th colspan="8">I. Personal Information</th>
         <tr>
             <td><label for="surname">SURNAME: </label></td>
@@ -172,7 +183,7 @@
 
       <table>
         <th colspan="6">II. Family Background</th>
-        <tr><td id="line" style= "font-weight: bold;"><label>Spouse's</label></td></tr>
+        <tr><td id="line"><label>Spouse's</label></td></tr>
             <tr>
                 <td><label>Surname</label></td>
                 <td><input type="text"></td>
@@ -554,7 +565,7 @@ function addInputRow_05() {
     </form>
   </table>--><br>
   <form action="" method="post" style="text-align: center; margin-top: 20px;">
-    <button style="background-color: skyblue; 
+    <button style="background-color: darkgray; 
                    font-weight: bold; 
                    color: wheat; 
                    height: 30px;
